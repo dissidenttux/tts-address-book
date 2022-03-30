@@ -39,17 +39,24 @@ public class Main {
         switch (userAction) {
             case 1:
                 System.out.println("sus");
+                break;
             case 2:
                 System.out.println("Schlatty Patty");
+                break;
             case 3:
-                System.out.println("Haha ");
+                System.out.println("Haha");
+                break;
             case 4:
-                System.out.println("kakak ");
+                System.out.println("kakak");
+                break;
             case 5:
-                System.out.println("abab ");
+                System.out.println("abab");
+                break;
             case 6:
                 System.out.println("ggg");
             break;
+            default:
+                System.out.println("You didn't put anything, stupid");
         }
 
         /* TODO: implement command line program loop (while?)
