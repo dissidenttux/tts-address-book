@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<AddressBook> userBook = new ArrayList<AddressBook>();
         // ArrayList for data or whatever(????)
 	    // Starting Program Prompt
         System.out.print("1) Add an entry\n\n" + "2) Remove an entry\n\n" +
@@ -38,7 +37,16 @@ public class Main {
         //user input options
         switch (userAction) {
             case 1:
-                System.out.println("sus");
+                AddressBook book = new AddressBook();
+                System.out.println("Enter a first name:");
+                book.setFirstName(scan.nextLine());
+                System.out.println("Enter a last name:");
+                book.setLastName(scan.nextLine());
+                System.out.println("Enter a phone number:");
+                book.setPhoneNumber(scan.nextLine());
+                System.out.println("Enter an email address:");
+                book.setUserEmail(scan.nextLine());
+                System.out.println(book.getAllInfo());
                 break;
             case 2:
                 System.out.println("Schlatty Patty");

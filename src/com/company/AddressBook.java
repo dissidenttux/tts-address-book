@@ -1,12 +1,10 @@
 package com.company;
 
-import java.util.ArrayList;
-
 public class AddressBook {
     //properties of AddressBook
     private String firstName;
     private String lastName;
-    private String phoneNumber;
+    private String phoneNumber; // might need an int
     private String userEmail;
 
     public void AddressBook(String firstName, String lastName, String phoneNumber, String userEmail) {
@@ -17,5 +15,44 @@ public class AddressBook {
     }
 
     // getters and setters
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    // print all the contents of the AddressBook
+    public boolean getAllInfo() {
+        getFirstName();
+        getLastName();
+        getPhoneNumber();
+        getUserEmail();
+        return false;
+    }
 }
