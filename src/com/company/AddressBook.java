@@ -48,11 +48,10 @@ public class AddressBook {
     }
 
     // print all the contents of the AddressBook
-    public boolean getAllInfo() {
-        getFirstName();
-        getLastName();
-        getPhoneNumber();
-        getUserEmail();
-        return false;
+    public void getAllInfo() {
+        System.out.println(getFirstName());
+        System.out.println(getLastName());
+        System.out.println(getPhoneNumber());
+        System.out.println(getUserEmail());
     }
 }
